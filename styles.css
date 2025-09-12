@@ -1,0 +1,55 @@
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navigation Link Hover Effect */
+.nav-link {
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #f97316; /* Bright Orange (orange-500) */
+}
+
+/* Hero Section Background */
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Call to Action Section Background */
+.cta-bg {
+    background-color: #0f172a; /* Navy Blue (slate-900) */
+}
+
+/* Quote Form Custom Radio Button Style */
+.quote-option-radio:checked + label {
+    border-color: #f97316; /* Orange-500 */
+    background-color: #fff7ed; /* Orange-50 */
+}
+.quote-option-radio:checked + label h4 {
+    color: #ea580c; /* Orange-600 */
+}
+
+/* FAQ Accordion Styling */
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+details[open] summary .plus-icon {
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in-out;
+}
+.plus-icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Quote Form Progress Bar */
+.progress-bar-fill {
+    transition: width 0.3s ease-in-out;
+}
+
