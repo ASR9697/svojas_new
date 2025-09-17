@@ -17,8 +17,7 @@
     <header id="header" class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
-                <!-- LOGO PLACEHOLDER -->
-                <img src="https://placehold.co/150x50/0f172a/ffffff?text=Svojas+Inc." alt="Svojas Inc. Logo" class="h-10">
+                <img src="images/logo.png" alt="Svojas Inc. Logo" class="h-10">
             </a>
             
             <!-- Desktop Menu -->
@@ -64,7 +63,7 @@
                 <h1 class="text-4xl font-bold mb-6">Contact Us</h1>
                 <p class="text-lg text-gray-600 mb-12">Ready for a quote or have a question about our services? Our team is here to help. Contact us today and let's discuss how we can support your logistics needs.</p>
             </div>
-            <div class="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-lg grid md:grid-cols-2 gap-12 items-start">
+            <div id="contact-form-container" class="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-lg grid md:grid-cols-2 gap-12 items-start">
                 <div>
                     <h3 class="text-2xl font-bold text-slate-800 mb-4">Direct Contact Information</h3>
                     <div class="space-y-4 text-lg">
@@ -88,7 +87,7 @@
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-slate-800 mb-4">Send Us a Message</h3>
-                    <form action="#" method="POST" id="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/meoldnwk" method="POST">
                         <div class="space-y-4">
                             <div>
                                 <label for="name" class="sr-only">Name</label>
@@ -115,6 +114,14 @@
                     </form>
                 </div>
             </div>
+             <!-- Success Message -->
+            <div id="contact-success-message" class="hidden text-center bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-6xl mx-auto">
+                <svg class="w-16 h-16 text-green-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h2 class="text-3xl font-bold text-slate-800 mb-2">Thank You!</h2>
+                <p class="text-lg text-gray-600">Your message has been sent successfully. We will get back to you shortly.</p>
+            </div>
         </div>
     </main>
 
@@ -124,7 +131,7 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <!-- LOGO PLACEHOLDER -->
-                    <img src="https://placehold.co/150x50/ffffff/0f172a?text=Svojas+Inc." alt="Svojas Inc. Logo" class="h-10 mb-4">
+                    <a href="index.html"><img src="images/logo.png" alt="Svojas Inc. Logo" class="h-12 mb-4"></a>
                     <p class="italic">"CARRYING YOUR LOAD AND TRUST"</p>
                 </div>
                 <div>
