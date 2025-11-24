@@ -4,221 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Svojas Inc. | Carrying Your Load and Trust</title>
-    <meta name="description" content="Svojas Inc. is a trusted logistics partner in the USA, offering FTL, LTL, Drayage, Air Freight, and Specialized OOG Cargo solutions. Carrying your load and trust.">
+    <meta name="description" content="Svojas Inc. is a trusted logistics partner in the USA, offering FTL, LTL, Drayage, Air Freight, and Specialized OOG Cargo solutions.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-gray-800">
-
-    <!-- Header & Navigation -->
-    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="images/logo.png" alt="Svojas Inc. Logo" class="h-10">
-            </a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="index.html" class="nav-link font-medium">Home</a>
-                <a href="about.html" class="nav-link font-medium">About Us</a>
-                <a href="services.html" class="nav-link font-medium">Services</a>
-                <a href="industries.html" class="nav-link font-medium">Industries</a>
-                <a href="equipment.html" class="nav-link font-medium">Equipment Guide</a>
-                <a href="faq.html" class="nav-link font-medium">FAQ</a>
-                <a href="contact.html" class="nav-link font-medium">Contact Us</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-6">
-                 <a href="tel:+12014900220" class="flex items-center space-x-2 text-sm font-semibold text-gray-600 hover:text-orange-500 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.176 5.176l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                    <span>+1 201 490 0220</span>
-                </a>
-                <a href="quote.html" class="bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-orange-600 transition-all duration-300 ease-in-out transform hover:scale-105">Get a Free Quote</a>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
-            <a href="index.html" class="block nav-link font-medium">Home</a>
-            <a href="about.html" class="block nav-link font-medium">About Us</a>
-            <a href="services.html" class="block nav-link font-medium">Services</a>
-            <a href="industries.html" class="block nav-link font-medium">Industries</a>
-            <a href="equipment.html" class="block nav-link font-medium">Equipment Guide</a>
-            <a href="faq.html" class="block nav-link font-medium">FAQ</a>
-            <a href="contact.html" class="block nav-link font-medium">Contact Us</a>
-            <a href="quote.html" class="block bg-orange-500 text-white text-center font-semibold mt-4 px-5 py-2 rounded-lg hover:bg-orange-600 transition-colors">Get a Free Quote</a>
-        </div>
-    </header>
-
+<body class="text-gray-800 antialiased">
+    <div id="dynamic-header"></div>
     <main>
-        <!-- Hero Section -->
-        <div class="hero-bg text-white">
-            <div class="container mx-auto px-6 py-32 text-center">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Your Trusted Partner in Freight Logistics</h1>
-                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-6">Reliable, efficient, and transparent transportation solutions designed for your business needs across the USA.</p>
-                <p class="text-base md:text-lg italic font-semibold mb-8">"CARRYING YOUR LOAD AND TRUST"</p>
-                <a href="quote.html" class="bg-orange-500 text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-orange-600 transition-all duration-300 ease-in-out transform hover:scale-105 inline-block">Get a Free Quote</a>
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="container mx-auto px-6 py-40 relative z-10 text-center text-white">
+                <div class="inline-block py-1 px-4 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-orange-200 text-sm font-bold tracking-widest mb-8 shadow-lg">
+                    LOGISTICS SIMPLIFIED
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8 drop-shadow-lg text-white">
+                    Carrying Your <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-200 to-orange-400">Load and Trust</span>
+                </h1>
+                <p class="text-lg md:text-2xl max-w-3xl mx-auto mb-12 text-slate-100 font-light leading-relaxed drop-shadow-md">
+                    Reliable, efficient, and transparent transportation solutions designed for your business needs across the USA.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                    <a href="quote.html" class="btn-gradient text-white font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:shadow-orange-500/40 transition-all duration-500 ease-in-out transform hover:-translate-y-1">Get a Free Quote</a>
+                    <a href="services.html" class="glass-panel text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-white/20 border border-white/30 transition-all duration-500 ease-in-out">Explore Services</a>
+                </div>
             </div>
         </div>
 
-        <!-- Services Overview Section -->
-        <div class="py-20 bg-gray-50">
+        <div class="py-24">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12">Our Core Logistics Services</h2>
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-800 mb-6">Our Core Logistics Services</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto text-lg">Comprehensive solutions tailored to move your business forward.</p>
+                </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Service Card 1 -->
-                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
-                        <div class="bg-orange-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5v-1.875a3.375 3.375 0 003.375-3.375h1.5a1.125 1.125 0 011.125 1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375m17.25 4.5v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5c0-.621.504-1.125 1.125-1.125h1.5" /></svg>
+                    <div class="service-card-trigger glass-card p-8 text-center group cursor-pointer" data-service="ftl">
+                        <div class="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-orange-100 to-white rounded-3xl flex items-center justify-center shadow-sm border border-orange-50 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-10 h-10 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5v-1.875a3.375 3.375 0 003.375-3.375h1.5a1.125 1.125 0 011.125 1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375m17.25 4.5v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5c0-.621.504-1.125 1.125-1.125h1.5" /></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">FTL & LTL Freight</h3>
-                        <p class="text-gray-600">Flexible and cost-effective shipping for full truckloads or single pallets.</p>
+                        <h3 class="text-xl font-bold mb-4 text-slate-800 group-hover:text-orange-600 transition-colors">FTL & LTL Freight</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Flexible and cost-effective shipping for full truckloads or single pallets.</p>
+                        <span class="text-orange-600 text-sm font-bold opacity-0 group-hover:opacity-100 transition-all">View Details &rarr;</span>
                     </div>
-                    <!-- Service Card 2 -->
-                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
-                        <div class="bg-orange-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414-.336.75-.75.75h-.75m0-1.5h.375c.621 0 1.125.504 1.125 1.125v.375m-18 0h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v.75" /></svg>
+                    <div class="service-card-trigger glass-card p-8 text-center group cursor-pointer" data-service="drayage">
+                        <div class="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-orange-100 to-white rounded-3xl flex items-center justify-center shadow-sm border border-orange-50 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-10 h-10 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414-.336.75-.75.75h-.75m0-1.5h.375c.621 0 1.125.504 1.125 1.125v.375m-18 0h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v.75" /></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Drayage Services</h3>
-                        <p class="text-gray-600">Seamlessly moving cargo from ports and rail yards to its next destination.</p>
+                        <h3 class="text-xl font-bold mb-4 text-slate-800 group-hover:text-orange-600 transition-colors">Drayage Services</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Seamlessly moving cargo from ports and rail yards to its next destination.</p>
+                        <span class="text-orange-600 text-sm font-bold opacity-0 group-hover:opacity-100 transition-all">View Details &rarr;</span>
                     </div>
-                    <!-- Service Card 3 -->
-                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
-                        <div class="bg-orange-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
-                           <svg class="w-8 h-8 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
+                    <div class="service-card-trigger glass-card p-8 text-center group cursor-pointer" data-service="air">
+                        <div class="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-orange-100 to-white rounded-3xl flex items-center justify-center shadow-sm border border-orange-50 group-hover:scale-110 transition-transform duration-500">
+                           <svg class="w-10 h-10 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Air Freight Logistics</h3>
-                        <p class="text-gray-600">Expedited airport-to-door solutions for time-sensitive cargo.</p>
+                        <h3 class="text-xl font-bold mb-4 text-slate-800 group-hover:text-orange-600 transition-colors">Airport Recovery & Delivery</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Specialized ground transport for import recovery and export delivery.</p>
+                        <span class="text-orange-600 text-sm font-bold opacity-0 group-hover:opacity-100 transition-all">View Details &rarr;</span>
                     </div>
-                    <!-- Service Card 4 -->
-                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl">
-                        <div class="bg-orange-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10.5 11.25h3M12 15h.008" /></svg>
+                    <div class="service-card-trigger glass-card p-8 text-center group cursor-pointer" data-service="oog">
+                        <div class="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-orange-100 to-white rounded-3xl flex items-center justify-center shadow-sm border border-orange-50 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-10 h-10 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10.5 11.25h3M12 15h.008" /></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Specialized & OOG Cargo</h3>
-                        <p class="text-gray-600">Expert planning for complex, heavy-haul, and out-of-gauge projects.</p>
+                        <h3 class="text-xl font-bold mb-4 text-slate-800 group-hover:text-orange-600 transition-colors">Specialized & OOG</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Expert planning for complex, heavy-haul, and out-of-gauge projects.</p>
+                        <span class="text-orange-600 text-sm font-bold opacity-0 group-hover:opacity-100 transition-all">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Why Choose Us Section -->
-        <div class="py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-16">The Svojas Inc. Advantage</h2>
-                <div class="grid md:grid-cols-3 gap-12">
-                    <div class="text-center">
-                        <div class="bg-orange-100 rounded-full h-20 w-20 flex items-center justify-center mx-auto mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-slate-800">Unmatched Reliability</h3>
-                        <p class="text-gray-600 leading-relaxed">We are committed to carrying your load and your trust. We leverage a vetted network of carriers to ensure on-time, dependable delivery, every time.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="bg-orange-100 rounded-full h-20 w-20 flex items-center justify-center mx-auto mb-6">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-slate-800">Clear Communication</h3>
-                        <p class="text-gray-600 leading-relaxed">No more guessing games. We provide proactive updates and maintain clear lines of communication from pickup to delivery.</p>
-                    </div>
-                    <div class="text-center">
-                         <div class="bg-orange-100 rounded-full h-20 w-20 flex items-center justify-center mx-auto mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-slate-800">Tailored Solutions</h3>
-                        <p class="text-gray-600 leading-relaxed">From small businesses to professional freight forwarders, we tailor our approach to provide the right solution for your unique goals.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <!-- Testimonials Section -->
-        <div class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-12">What Our Clients Say</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                        <p class="text-gray-600 italic mb-4">"Svojas Inc. has been a game-changer for our drayage operations at the Port of LA. Their communication is proactive and they always meet our tight deadlines. They are a reliable partner we can count on."</p>
-                        <p class="font-bold text-slate-800">Maria Rodriguez</p>
-                        <p class="text-sm text-gray-500">Logistics Manager, Global Forwarding Co.</p>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                        <p class="text-gray-600 italic mb-4">"As a small business, finding a trustworthy LTL partner was a huge challenge. The team at Svojas took the time to understand our needs and have consistently provided cost-effective and dependable service."</p>
-                        <p class="font-bold text-slate-800">David Chen</p>
-                        <p class="text-sm text-gray-500">Owner, Chen's Fine Goods</p>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="bg-white p-8 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                        <p class="text-gray-600 italic mb-4">"We had a complex, oversized machine that needed to be moved from Texas to Ohio. Svojas handled the entire process—permitting, routing, and final delivery—flawlessly. True professionals in specialized cargo."</p>
-                        <p class="font-bold text-slate-800">Brian Thompson</p>
-                        <p class="text-sm text-gray-500">Plant Supervisor, Midwest Manufacturing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Final CTA Section -->
-        <div class="cta-bg text-white">
-            <div class="container mx-auto px-6 py-20 text-center">
-                <h2 class="text-3xl font-bold mb-4">Ready to Get Your Freight Moving?</h2>
-                <p class="text-lg max-w-2xl mx-auto mb-8">Contact our logistics experts today for a no-obligation quote and discover a better way to ship.</p>
-                <a href="contact.html" class="bg-white text-orange-500 font-bold text-lg px-8 py-4 rounded-lg hover:bg-gray-200 transition-all duration-300 ease-in-out transform hover:scale-105 inline-block">Talk to an Expert</a>
+        <div class="container mx-auto px-6 pb-24">
+            <div class="cta-bg p-20 text-center text-white shadow-2xl relative overflow-hidden">
+                <h2 class="text-3xl md:text-5xl font-bold mb-8 text-white">Ready to Get Your Freight Moving?</h2>
+                <p class="text-xl max-w-3xl mx-auto mb-12 text-slate-200 font-light">Contact our logistics experts today for a no-obligation quote.</p>
+                <a href="contact.html" class="btn-gradient text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:shadow-orange-500/50 transition-all duration-500 ease-in-out transform hover:scale-105 inline-block">Talk to an Expert</a>
             </div>
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white">
-        <div class="container mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <!-- LOGO PLACEHOLDER -->
-                    <a href="index.html"><img src="images/logo.png" alt="Svojas Inc. Logo" class="h-12 mb-4"></a>
-                    <p class="italic">"CARRYING YOUR LOAD AND TRUST"</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Company</h4>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="hover:text-orange-400">About Us</a></li>
-                        <li><a href="industries.html" class="hover:text-orange-400">Industries</a></li>
-                        <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-                    </ul>
-                </div>
-                 <div>
-                    <h4 class="font-bold mb-3">Resources</h4>
-                    <ul class="space-y-2">
-                        <li><a href="equipment.html" class="hover:text-orange-400">Equipment Guide</a></li>
-                        <li><a href="faq.html" class="hover:text-orange-400">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Contact Info</h4>
-                    <p>Phone: <a href="tel:+12014900220" class="hover:text-orange-400">+1 201 490 0220</a></p>
-                    <p>Email: <a href="mailto:info@svojasinc.com" class="hover:text-orange-400">info@svojasinc.com</a></p>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
-                &copy; <span id="year"></span> Svojas Inc. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-
+    <div id="dynamic-footer"></div>
+    <div id="dynamic-modal"></div>
     <script src="script.js"></script>
 </body>
 </html>
-

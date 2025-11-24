@@ -4,111 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Svojas Inc.</title>
-    <meta name="description" content="Learn about Svojas Inc., our mission, and our commitment to providing high-quality, efficient logistics services.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-gray-800">
-
-    <!-- Header & Navigation -->
-    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                 <!-- LOGO PLACEHOLDER -->
-                <img src="images/logo.png" alt="Svojas Inc. Logo" class="h-10">
-            </a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="index.html" class="nav-link font-medium">Home</a>
-                <a href="about.html" class="nav-link font-medium">About Us</a>
-                <a href="services.html" class="nav-link font-medium">Services</a>
-                <a href="industries.html" class="nav-link font-medium">Industries</a>
-                <a href="equipment.html" class="nav-link font-medium">Equipment Guide</a>
-                <a href="faq.html" class="nav-link font-medium">FAQ</a>
-                <a href="contact.html" class="nav-link font-medium">Contact Us</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-6">
-                 <a href="tel:+12014900220" class="flex items-center space-x-2 text-sm font-semibold text-gray-600 hover:text-orange-500 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.176 5.176l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                    <span>+1 201 490 0220</span>
-                </a>
-                <a href="quote.html" class="bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-orange-600 transition-all duration-300 ease-in-out transform hover:scale-105">Get a Free Quote</a>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
-            <a href="index.html" class="block nav-link font-medium">Home</a>
-            <a href="about.html" class="block nav-link font-medium">About Us</a>
-            <a href="services.html" class="block nav-link font-medium">Services</a>
-            <a href="industries.html" class="block nav-link font-medium">Industries</a>
-            <a href="equipment.html" class="block nav-link font-medium">Equipment Guide</a>
-            <a href="faq.html" class="block nav-link font-medium">FAQ</a>
-            <a href="contact.html" class="block nav-link font-medium">Contact Us</a>
-            <a href="quote.html" class="block bg-orange-500 text-white text-center font-semibold mt-4 px-5 py-2 rounded-lg hover:bg-orange-600 transition-colors">Get a Free Quote</a>
-        </div>
-    </header>
-
+<body class="text-gray-800">
+    <div id="dynamic-header"></div>
     <main>
-        <div class="container mx-auto px-6 py-20">
+        <div class="container mx-auto px-6 py-40">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl font-bold text-center mb-10">About Svojas Inc.</h1>
-                <div class="prose lg:prose-xl text-gray-700 leading-relaxed space-y-6">
-                    <p>Since opening our doors, we’ve been committed to providing service of the highest quality, paying particular attention to working efficiently while keeping the lines of communication with our clients clear and concise.</p>
-                    <p>Our mission at Svojas Inc. is simple: to provide high-quality logistics services in a timely manner. We are more than a service provider; we are your strategic partner in transportation. Our team caters to each project’s specific needs to ensure excellence, from standard LTL shipments to complex OOG cargo.</p>
-                    <p>We build relationships based on transparency and results, always guided by our promise of <span class="font-semibold text-slate-800">"CARRYING YOUR LOAD AND TRUST"</span>.</p>
-                    <p>We hope you’ll find what you’re looking for in a logistics partner. For more information or general inquiries, feel free to get in touch today.</p>
+                <div class="glass-panel p-10 md:p-20">
+                    <h1 class="text-4xl font-extrabold text-center mb-10 text-slate-800">About Svojas Inc.</h1>
+                    <div class="prose lg:prose-xl text-slate-600 leading-relaxed space-y-8">
+                        <p class="text-lg">Since opening our doors, we’ve been committed to providing service of the highest quality, paying particular attention to working efficiently while keeping the lines of communication with our clients clear and concise.</p>
+                        <p class="text-lg">Our mission at Svojas Inc. is simple: to provide high-quality logistics services in a timely manner. We are more than a service provider; we are your strategic partner in transportation.</p>
+                        <div class="glass-card bg-orange-50/80 p-8 rounded-2xl border border-orange-100 my-8">
+                            <p class="text-center text-2xl font-serif italic text-orange-800">"We build relationships based on transparency and results, always guided by our promise of CARRYING YOUR LOAD AND TRUST."</p>
+                        </div>
+                        <p class="text-lg">We hope you’ll find what you’re looking for in a logistics partner. For more information or general inquiries, feel free to get in touch today.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white">
-        <div class="container mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
-                 <div>
-                    <!-- LOGO PLACEHOLDER -->
-                    <a href="index.html"><img src="images/logo.png" alt="Svojas Inc. Logo" class="h-12 mb-4"></a>
-                    <p class="italic">"CARRYING YOUR LOAD AND TRUST"</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Company</h4>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="hover:text-orange-400">About Us</a></li>
-                        <li><a href="industries.html" class="hover:text-orange-400">Industries</a></li>
-                        <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-                    </ul>
-                </div>
-                 <div>
-                    <h4 class="font-bold mb-3">Resources</h4>
-                    <ul class="space-y-2">
-                        <li><a href="equipment.html" class="hover:text-orange-400">Equipment Guide</a></li>
-                        <li><a href="faq.html" class="hover:text-orange-400">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Contact Info</h4>
-                    <p>Phone: <a href="tel:+12014900220" class="hover:text-orange-400">+1 201 490 0220</a></p>
-                    <p>Email: <a href="mailto:info@svojasinc.com" class="hover:text-orange-400">info@svojasinc.com</a></p>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
-                &copy; <span id="year"></span> Svojas Inc. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-
+    <div id="dynamic-footer"></div>
     <script src="script.js"></script>
 </body>
 </html>
-

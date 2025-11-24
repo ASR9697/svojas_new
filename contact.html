@@ -4,164 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Svojas Inc.</title>
-    <meta name="description" content="Get in touch with the Svojas Inc. logistics team. Contact us for a quote or for any inquiries about our freight services.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Header & Navigation -->
-    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="images/logo.png" alt="Svojas Inc. Logo" class="h-10">
-            </a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="index.html" class="nav-link font-medium">Home</a>
-                <a href="about.html" class="nav-link font-medium">About Us</a>
-                <a href="services.html" class="nav-link font-medium">Services</a>
-                <a href="industries.html" class="nav-link font-medium">Industries</a>
-                <a href="equipment.html" class="nav-link font-medium">Equipment Guide</a>
-                <a href="faq.html" class="nav-link font-medium">FAQ</a>
-                <a href="contact.html" class="nav-link font-medium">Contact Us</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-6">
-                 <a href="tel:+12014900220" class="flex items-center space-x-2 text-sm font-semibold text-gray-600 hover:text-orange-500 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.176 5.176l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                    <span>+1 201 490 0220</span>
-                </a>
-                <a href="quote.html" class="bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-orange-600 transition-all duration-300 ease-in-out transform hover:scale-105">Get a Free Quote</a>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
-            <a href="index.html" class="block nav-link font-medium">Home</a>
-            <a href="about.html" class="block nav-link font-medium">About Us</a>
-            <a href="services.html" class="block nav-link font-medium">Services</a>
-            <a href="industries.html" class="block nav-link font-medium">Industries</a>
-            <a href="equipment.html" class="block nav-link font-medium">Equipment Guide</a>
-            <a href="faq.html" class="block nav-link font-medium">FAQ</a>
-            <a href="contact.html" class="block nav-link font-medium">Contact Us</a>
-            <a href="quote.html" class="block bg-orange-500 text-white text-center font-semibold mt-4 px-5 py-2 rounded-lg hover:bg-orange-600 transition-colors">Get a Free Quote</a>
-        </div>
-    </header>
-
+<body class="text-gray-800">
+    <div id="dynamic-header"></div>
     <main>
-        <div class="container mx-auto px-6 py-20">
-            <div class="text-center max-w-4xl mx-auto">
-                <h1 class="text-4xl font-bold mb-6">Contact Us</h1>
-                <p class="text-lg text-gray-600 mb-12">Ready for a quote or have a question about our services? Our team is here to help. Contact us today and let's discuss how we can support your logistics needs.</p>
+        <div class="container mx-auto px-6 py-40">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h1 class="text-4xl font-bold mb-6 text-slate-800">Contact Us</h1>
+                <p class="text-lg text-slate-600">Ready for a quote or have a question? Our team is here to help.</p>
             </div>
-            <div id="contact-form-container" class="max-w-6xl mx-auto bg-white p-8 rounded-lg shadow-lg grid md:grid-cols-2 gap-12 items-start">
+            <div id="contact-form-container" class="max-w-6xl mx-auto glass-panel p-10 md:p-16 grid md:grid-cols-2 gap-16 items-start">
                 <div>
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Direct Contact Information</h3>
-                    <div class="space-y-4 text-lg">
-                        <p class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                            <a href="tel:+12014900220" class="text-slate-700 hover:text-orange-500 hover:underline">+1 201 490 0220</a>
-                        </p>
-                        <p class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                            <a href="mailto:info@svojasinc.com" class="text-slate-700 hover:text-orange-500 hover:underline">info@svojasinc.com</a>
-                        </p>
-                    </div>
-
-                    <div class="mt-8 pt-8 border-t">
-                        <h3 class="text-2xl font-bold text-slate-800 mb-4">Business Hours</h3>
-                        <div class="space-y-2 text-lg text-slate-700">
-                           <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM EST</p>
-                           <p><strong>Saturday - Sunday:</strong> Closed</p>
-                        </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">Get In Touch</h3>
+                    <div class="space-y-6 text-lg text-slate-600">
+                        <p class="flex items-center gap-4"><span class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-500"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg></span><a href="tel:+12014900220" class="hover:text-orange-500 font-medium transition-colors">+1 201 490 0220</a></p>
+                        <p class="flex items-center gap-4"><span class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-500"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></span><a href="mailto:info@svojasinc.com" class="hover:text-orange-500 font-medium transition-colors">info@svojasinc.com</a></p>
+                        <p class="flex items-start gap-4"><span class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 shrink-0"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg></span><span class="text-slate-600">155 New Boston St.<br>Building M, Suite 130,<br>Woburn, MA 01801</span></p>
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Send Us a Message</h3>
-                    <form id="contact-form" action="https://formspree.io/f/meoldnwk" method="POST">
-                        <div class="space-y-4">
-                            <div>
-                                <label for="name" class="sr-only">Name</label>
-                                <input type="text" name="name" id="name" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-orange-500 focus:border-orange-500 border-gray-300 rounded-md" placeholder="Full Name" required>
-                            </div>
-                            <div>
-                                <label for="email" class="sr-only">Email</label>
-                                <input id="email" name="email" type="email" autocomplete="email" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-orange-500 focus:border-orange-500 border-gray-300 rounded-md" placeholder="Email Address" required>
-                            </div>
-                            <div>
-                                <label for="subject" class="sr-only">Subject</label>
-                                <input type="text" name="subject" id="subject" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-orange-500 focus:border-orange-500 border-gray-300 rounded-md" placeholder="Subject" required>
-                            </div>
-                            <div>
-                                <label for="message" class="sr-only">Message</label>
-                                <textarea id="message" name="message" rows="4" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-orange-500 focus:border-orange-500 border-gray-300 rounded-md" placeholder="Your Message" required></textarea>
-                            </div>
-                            <div>
-                                <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-all duration-300 ease-in-out transform hover:scale-105">
-                                    Send Message
-                                </button>
-                            </div>
-                        </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">Send a Message</h3>
+                    <form id="contact-form" class="space-y-5">
+                        <div><label class="block text-sm font-bold text-slate-700 mb-1">Full Name</label><input type="text" name="name" class="w-full rounded-lg p-3 text-slate-800" required></div>
+                        <div><label class="block text-sm font-bold text-slate-700 mb-1">Email Address</label><input type="email" name="email" class="w-full rounded-lg p-3 text-slate-800" required></div>
+                        <div><label class="block text-sm font-bold text-slate-700 mb-1">Subject</label><input type="text" name="subject" class="w-full rounded-lg p-3 text-slate-800" required></div>
+                        <div><label class="block text-sm font-bold text-slate-700 mb-1">Message</label><textarea name="message" rows="4" class="w-full rounded-lg p-3 text-slate-800" required></textarea></div>
+                        <button type="submit" class="w-full btn-gradient text-white font-bold py-4 rounded-xl shadow-lg">Send Message</button>
                     </form>
                 </div>
             </div>
-             <!-- Success Message -->
-            <div id="contact-success-message" class="hidden text-center bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-6xl mx-auto">
-                <svg class="w-16 h-16 text-green-500 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <h2 class="text-3xl font-bold text-slate-800 mb-2">Thank You!</h2>
-                <p class="text-lg text-gray-600">Your message has been sent successfully. We will get back to you shortly.</p>
-            </div>
+             <div id="contact-success-message" class="hidden text-center glass-panel p-12 max-w-2xl mx-auto"><h2 class="text-3xl font-bold text-slate-800 mb-4">Thank You!</h2><p class="text-lg text-slate-600">Your message has been sent successfully.</p></div>
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white">
-        <div class="container mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <!-- LOGO PLACEHOLDER -->
-                    <a href="index.html"><img src="images/logo.png" alt="Svojas Inc. Logo" class="h-12 mb-4"></a>
-                    <p class="italic">"CARRYING YOUR LOAD AND TRUST"</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Company</h4>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="hover:text-orange-400">About Us</a></li>
-                        <li><a href="industries.html" class="hover:text-orange-400">Industries</a></li>
-                        <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-                    </ul>
-                </div>
-                 <div>
-                    <h4 class="font-bold mb-3">Resources</h4>
-                    <ul class="space-y-2">
-                        <li><a href="equipment.html" class="hover:text-orange-400">Equipment Guide</a></li>
-                        <li><a href="faq.html" class="hover:text-orange-400">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Contact Info</h4>
-                    <p>Phone: <a href="tel:+12014900220" class="hover:text-orange-400">+1 201 490 0220</a></p>
-                    <p>Email: <a href="mailto:info@svojasinc.com" class="hover:text-orange-400">info@svojasinc.com</a></p>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
-                &copy; <span id="year"></span> Svojas Inc. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-
+    <div id="dynamic-footer"></div>
     <script src="script.js"></script>
 </body>
 </html>
-

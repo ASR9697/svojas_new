@@ -4,166 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ | Svojas Inc.</title>
-    <meta name="description" content="Find answers to frequently asked questions about logistics, shipping, quoting, and our services at Svojas Inc.">
+    <meta name="description" content="Find comprehensive answers to frequently asked questions about logistics, shipping, quoting, and our services at Svojas Inc.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-gray-800">
+<body class="text-gray-800">
 
-    <!-- Header & Navigation -->
-    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <!-- LOGO PLACEHOLDER -->
-                <img src="images/logo.png" alt="Svojas Inc. Logo" class="h-10">
-            </a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="index.html" class="nav-link font-medium">Home</a>
-                <a href="about.html" class="nav-link font-medium">About Us</a>
-                <a href="services.html" class="nav-link font-medium">Services</a>
-                <a href="industries.html" class="nav-link font-medium">Industries</a>
-                <a href="equipment.html" class="nav-link font-medium">Equipment Guide</a>
-                <a href="faq.html" class="nav-link font-medium">FAQ</a>
-                <a href="contact.html" class="nav-link font-medium">Contact Us</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-6">
-                 <a href="tel:+12014900220" class="flex items-center space-x-2 text-sm font-semibold text-gray-600 hover:text-orange-500 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.024 11.024 0 005.176 5.176l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                    <span>+1 201 490 0220</span>
-                </a>
-                <a href="quote.html" class="bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-orange-600 transition-all duration-300 ease-in-out transform hover:scale-105">Get a Free Quote</a>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </nav>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3">
-            <a href="index.html" class="block nav-link font-medium">Home</a>
-            <a href="about.html" class="block nav-link font-medium">About Us</a>
-            <a href="services.html" class="block nav-link font-medium">Services</a>
-            <a href="industries.html" class="block nav-link font-medium">Industries</a>
-            <a href="equipment.html" class="block nav-link font-medium">Equipment Guide</a>
-            <a href="faq.html" class="block nav-link font-medium">FAQ</a>
-            <a href="contact.html" class="block nav-link font-medium">Contact Us</a>
-            <a href="quote.html" class="block bg-orange-500 text-white text-center font-semibold mt-4 px-5 py-2 rounded-lg hover:bg-orange-600 transition-colors">Get a Free Quote</a>
-        </div>
-    </header>
+    <!-- Dynamic Header -->
+    <div id="dynamic-header"></div>
 
     <main>
-        <div class="bg-gray-50">
-            <div class="container mx-auto px-6 py-20">
-                <div class="text-center max-w-4xl mx-auto">
-                    <h1 class="text-4xl font-bold mb-6">Frequently Asked Questions</h1>
-                    <p class="text-lg text-gray-600 mb-12">Have questions? We have answers. Find quick answers to some of the most common questions we receive about our services and the shipping process. If you don't find your answer here, please don't hesitate to contact us directly.</p>
+        <div class="container mx-auto px-6 py-40">
+            <!-- Page Header -->
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-slate-800">Frequently Asked Questions</h1>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">Everything you need to know about shipping, logistics, and working with Svojas Inc.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-16">
+                
+                <!-- Section 1: Quoting & Booking -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-10 w-1 bg-orange-500 rounded-full"></div>
+                        <h2 class="text-3xl font-bold text-slate-800">Quoting & Booking</h2>
+                    </div>
+                    
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            What information do I need to get an accurate freight quote?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            <p class="mb-4">To provide the most accurate rate and avoid future adjustments, please have the following ready:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-2 marker:text-orange-400">
+                                <li><strong>Origin & Destination Zip Codes:</strong> Precise locations help us calculate mileage and routing.</li>
+                                <li><strong>Freight Description:</strong> Commodity type, handling units (pallets, crates), and dimensions (L x W x H).</li>
+                                <li><strong>Total Weight:</strong> Accurate weight is crucial for safety and compliance.</li>
+                                <li><strong>Accessorials:</strong> Do you need a liftgate? Is it a residential delivery? Is an appointment required?</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            How long is my quote valid for?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            Due to the dynamic nature of the freight market (fuel costs, capacity, seasonality), our spot market quotes are typically valid for <strong>7 days</strong>. However, if you have regular shipping volumes, we can discuss long-term contract rates to provide price stability. Your specific quote document will always list its expiration date.
+                        </div>
+                    </details>
+
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            Can I book a shipment for same-day pickup?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            Yes, we often accommodate same-day pickups! However, availability depends on truck capacity in your specific area and the time the request is made. For the best chance of securing a truck, please submit your booking request as early in the day as possible (ideally before 12:00 PM local time).
+                        </div>
+                    </details>
                 </div>
-                <div class="max-w-4xl mx-auto space-y-10">
-                    <!-- FAQ Category -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-orange-500 pb-2">Quoting & Booking</h2>
-                        <div class="space-y-4">
-                            <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">What information do I need to get an accurate freight quote?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">To give you the most accurate quote, our smart form will guide you. Generally, we need your contact info, the origin/destination, and details about the freight like its type, weight, and dimensions.</p>
-                            </details>
-                            <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">How long is my quote valid for?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">Market rates for freight can change quickly. Typically, our quotes are valid for 7 days, but this can vary. Your quote will specify its expiration date.</p>
-                            </details>
-                        </div>
+
+                <!-- Section 2: Services -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-10 w-1 bg-orange-500 rounded-full"></div>
+                        <h2 class="text-3xl font-bold text-slate-800">Services & Capabilities</h2>
                     </div>
-                    <!-- FAQ Category -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-orange-500 pb-2">Services & Capabilities</h2>
-                        <div class="space-y-4">
-                           <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">What is the difference between FTL and LTL?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">FTL (Full Truckload) means your freight is the only shipment on a dedicated truck. LTL (Less-than-Truckload) means your freight shares space on a truck with other shipments, which is a cost-effective option for smaller loads.</p>
-                            </details>
-                             <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">What areas do you service in the USA?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">We provide logistics solutions across all 48 contiguous United States.</p>
-                            </details>
+                    
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            What is the difference between FTL and LTL?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bg-orange-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-orange-800 mb-2">FTL (Full Truckload)</h4>
+                                    <p class="text-sm">You rent the entire trailer. Your freight is the only cargo on board and goes directly to the destination. It's faster, has less handling risk, but costs more if the truck isn't full.</p>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-blue-800 mb-2">LTL (Less-than-Truckload)</h4>
+                                    <p class="text-sm">You pay only for the space you use. Your freight shares the truck with other shippers' cargo. It stops at terminals along the way, making it more cost-effective but slightly slower.</p>
+                                </div>
+                            </div>
                         </div>
+                    </details>
+
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            What areas do you service?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            We provide comprehensive logistics solutions across all <strong>48 contiguous United States</strong>. Whether you are shipping coast-to-coast or just across state lines, we have the network to handle it. We can also facilitate cross-border shipments to Canada and Mexico upon request.
+                        </div>
+                    </details>
+
+                     <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            Do you handle hazardous materials (Hazmat)?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            Yes, we work with a network of certified Hazmat carriers. When requesting a quote, please mark the "Hazmat" option and be prepared to provide the UN number and Class of the material so we can match you with a properly licensed driver.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Section 3: Pricing & Insurance -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-10 w-1 bg-orange-500 rounded-full"></div>
+                        <h2 class="text-3xl font-bold text-slate-800">Pricing & Insurance</h2>
                     </div>
-                     <!-- FAQ Category -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-orange-500 pb-2">Pricing, Billing & Insurance</h2>
-                        <div class="space-y-4">
-                            <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">Does my freight quote include insurance?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">By law, all carriers have a minimum level of liability coverage, but it is limited and may not cover the full value of your goods. We strongly recommend purchasing separate freight insurance for full-value protection, which we can help you arrange.</p>
-                            </details>
-                             <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">What are your standard payment terms?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">Our standard payment terms are Net 30 for approved clients. We accept various payment methods, including ACH, wire transfer, and company checks. If you have different requirements, please discuss them with our team.</p>
-                            </details>
+                    
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            Does my freight quote include insurance?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            <p class="mb-3">Standard quotes include the carrier's basic limited liability coverage. This is often calculated by weight (e.g., $0.50 per lb) and is rarely enough to cover the full value of expensive goods.</p>
+                            <p class="bg-yellow-50 border-l-4 border-yellow-400 p-4 text-yellow-800 text-sm"><strong>Recommendation:</strong> We strongly advise purchasing <strong>All-Risk Cargo Insurance</strong> for valuable shipments. We can add this to your quote for a small fee, giving you full value protection against loss or damage.</p>
                         </div>
+                    </details>
+
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            What are your payment terms?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            For established business clients with approved credit, our standard terms are <strong>Net 30 days</strong>. We accept payments via ACH, Wire Transfer, and Company Check. For first-time shippers or individuals, we may require prepayment via credit card or wire transfer before the shipment is dispatched.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Section 4: Operations & Documentation -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-10 w-1 bg-orange-500 rounded-full"></div>
+                        <h2 class="text-3xl font-bold text-slate-800">Operations & Documentation</h2>
                     </div>
-                     <!-- FAQ Category -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-orange-500 pb-2">Shipping Operations</h2>
-                        <div class="space-y-4">
-                           <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">What is a Bill of Lading (BOL)?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">The Bill of Lading (BOL) is the most important document in shipping. It acts as a receipt, a contract, and a document of title. A BOL is required for every shipment and must be given to the driver upon pickup.</p>
-                            </details>
-                            <details class="bg-white p-6 rounded-lg shadow-sm">
-                                <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">What should I do if my shipment arrives damaged?<span class="plus-icon text-orange-500 text-2xl transition-transform transform">+</span></summary>
-                                <p class="mt-4 pt-4 border-t text-gray-700">In the rare event of damage, it is critical to note it on the delivery receipt <strong>before</strong> signing it. Take clear photos of the damage and contact your Svojas Inc. representative immediately. We will guide you through the claims process.</p>
-                            </details>
+                    
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            What is a Bill of Lading (BOL)?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            The Bill of Lading (BOL) is the "ticket" for your freight. It serves three purposes:
+                            <ol class="list-decimal list-inside mt-3 space-y-2 ml-2 marker:text-orange-500 marker:font-bold">
+                                <li><strong>Receipt:</strong> Proof that the carrier picked up the goods.</li>
+                                <li><strong>Contract:</strong> Legal agreement to transport the goods.</li>
+                                <li><strong>Title:</strong> Document of ownership.</li>
+                            </ol>
+                            <p class="mt-3 text-sm italic"><strong>Important:</strong> You must give the driver the specific BOL we provide at pickup to ensure proper billing and tracking.</p>
                         </div>
+                    </details>
+
+                    <details class="group glass-card p-0 overflow-hidden border-none">
+                        <summary class="flex justify-between items-center p-6 text-lg font-bold text-slate-700 cursor-pointer hover:text-orange-600 transition-colors">
+                            What should I do if my shipment arrives damaged?
+                            <span class="plus-icon text-2xl text-orange-400 font-light group-hover:text-orange-500 transition-transform duration-300">+</span>
+                        </summary>
+                        <div class="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-gray-100">
+                            In the unfortunate event of damage, follow these steps immediately:
+                            <ol class="list-decimal list-inside mt-3 space-y-2 ml-2 marker:text-orange-500 marker:font-bold">
+                                <li><strong>Inspect thoroughly:</strong> Check all sides of the pallet/crate while the driver is still there.</li>
+                                <li><strong>Notate the POD:</strong> Write specific details of the damage on the Proof of Delivery receipt <em>before</em> signing. Do not just sign "Subject to Inspection."</li>
+                                <li><strong>Take Pictures:</strong> Photograph the damage from multiple angles.</li>
+                                <li><strong>Do NOT refuse:</strong> Unless the shipment is totally destroyed, accept it and mitigate the loss. Refusing can complicate the claim.</li>
+                                <li><strong>Contact Us:</strong> Notify Svojas Inc. immediately so we can begin the claims process.</li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Still Help CTA -->
+                <div class="glass-panel p-12 text-center mt-20 border-t-4 border-orange-500 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-orange-50/50 to-transparent pointer-events-none"></div>
+                    <h3 class="text-3xl font-extrabold text-slate-800 mb-4 relative z-10">Still have questions?</h3>
+                    <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto relative z-10">Can't find the answer you're looking for? Our logistics experts are here to help you with any specific inquiries.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+                        <a href="contact.html" class="btn-gradient text-white font-bold px-8 py-4 rounded-full shadow-xl hover:shadow-orange-500/40 transition-all transform hover:-translate-y-1">Contact Support</a>
+                        <a href="tel:+12014900220" class="bg-white text-slate-700 border border-slate-200 font-bold px-8 py-4 rounded-full shadow-sm hover:bg-gray-50 transition-all flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            +1 201 490 0220
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white">
-        <div class="container mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <!-- LOGO PLACEHOLDER -->
-                    <img src="images/logo.png" alt="Svojas Inc. Logo" class="h-10 mb-4">
-                    <p class="italic">"CARRYING YOUR LOAD AND TRUST"</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Company</h4>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="hover:text-orange-400">About Us</a></li>
-                        <li><a href="industries.html" class="hover:text-orange-400">Industries</a></li>
-                        <li><a href="contact.html" class="hover:text-orange-400">Contact</a></li>
-                    </ul>
-                </div>
-                 <div>
-                    <h4 class="font-bold mb-3">Resources</h4>
-                    <ul class="space-y-2">
-                        <li><a href="equipment.html" class="hover:text-orange-400">Equipment Guide</a></li>
-                        <li><a href="faq.html" class="hover:text-orange-400">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-3">Contact Info</h4>
-                    <p>Phone: <a href="tel:+12014900220" class="hover:text-orange-400">+1 201 490 0220</a></p>
-                    <p>Email: <a href="mailto:info@svojasinc.com" class="hover:text-orange-400">info@svojasinc.com</a></p>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
-                &copy; <span id="year"></span> Svojas Inc. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    <!-- Dynamic Footer -->
+    <div id="dynamic-footer"></div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
